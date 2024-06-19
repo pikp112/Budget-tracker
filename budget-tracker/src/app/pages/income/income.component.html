@@ -11,7 +11,7 @@
             </div> 
             <div class="">
                 <div class="row">
-                  @for (item of transcationList; track $index) {
+                  @for (item of transactionList; track $index) {
                     <div class="col-3">
                       <div class="card">
                           <div class="card-body income-card">
@@ -51,7 +51,7 @@
                 <select class="form-select" [(ngModel)]="transcationObj.categoryId">
                     <option value="">Select</option>
                     @for (item of categoryList; track $index) {
-                      <option [value]="item.categoryId">{{item.categoryName}}</option>
+                      <option [value]="item.categoryId">{{ item.categoryName }}</option>
                     } 
                 </select>
             </div>
