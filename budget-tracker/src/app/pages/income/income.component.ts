@@ -7,4 +7,18 @@ import { Component } from '@angular/core';
 })
 export class IncomeComponent {
 
+
+  openModel(){
+    const model = document.getElementById('myModal');
+    if (model != null){
+      model.style.display = 'block';
+    }
+  }
+
+  closeModel(){
+    const model = document.getElementById('myModal');
+    if (model != null){
+      model.style.display = 'none';
+    }
+  }
 }
